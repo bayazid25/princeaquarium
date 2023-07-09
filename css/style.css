@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* header area start from here */
+    header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        
+        background: rgb(247, 240, 240);
+        
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .logo img{
+        width: 70px;
+        height: 70px;
+        
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: #2AA2B0;
+        display: flex;
+        justify-content: center;
+    }
+    .logo a h1{
+        color: rgb(15, 214, 214);
+        margin-top: 15px;
+        transition-duration: .8s;
+    }
+
+    span{
+        color: #2AA2B0;
+    }
+
+    .logo a h1:hover{
+        color: #2AA2B0;
+    }
+    
+    nav ul li{
+        float: left;
+    }
+    nav ul::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    nav ul li a{
+        padding: 15px 25px;
+        color: #2AA2B0;
+        display: block;
+        text-decoration: none;
+        font-weight: bolder;
+        transition-duration: .5s;
+        margin-top: 15px;
+        margin-bottom: 2px;
+        
+    }
+    nav ul li a:hover, .active{
+        background: #2AA2B0;
+        color: white;
+    }
+
+    .hbtn{
+        margin-right: 35px;
+        margin-top: 20px;
+        margin-left: 10px;
+        padding: 5px 15px;
+        font-size: 18px;
+        border: 3px solid aqua;
+        border-radius: 25px;
+        transition-duration: .5s;
+        color: #2AA2B0;
+    }
+   
+    .hbtn:hover{
+        background-color: #2AA2B0;
+        color: white;
+    }
+
+
+
+/* header area end here */
+
+
+/* main area start from here */
+
+/* msec1 start from here */
+#msec1{
+   background: url(../img/bg.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 650px;
+   width: 100%;
+   position: relative;
+   isolation: isolate;
+   top: 0;
+   left: 0;
+   
+}
+
+#msec1::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: .5;
+}
+
+#msec1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.msec1left{
+    color: white;
+    flex-basis: 45%;
+}
+.msec1left h5{
+    font-size: 25px;
+}
+.msec1left h2{
+    font-size: 45px;
+    color: aqua;
+}
+.msec1leftp1{
+    font-size: 35px;
+    color: #2AA2B0;
+    background: rgba(128, 128, 128, .2);
+    padding: 10px 5px;
+}
+.msec1leftp2{
+    font-size: 20px;
+}
+.ms1lbtn{
+    background: #2AA2B0;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    transition-duration: .5s;
+    border: solid 3px #2AA2B0;
+    margin-bottom: 20px;
+}
+.ms1lbtn:hover{
+    background: transparent;
+    color: white;
+    border: solid 3px #2AA2B0;
+}
+.ms1lefticon{
+    margin-top: 50px;
+}
+.ms1lefticon i{
+    color: white;
+    border: solid 2px rgb(77, 74, 74);
+    padding: 10px;
+    transition-duration: .5s;
+}
+.ms1lefticon i:hover{
+    background: #2AA2B0;
+    cursor: pointer;
+    border: solid 2px #2AA2B0;
+}
+
+
+
+.msec1right{
+    flex-basis: 30%;
+    color: #2AA2B0;
+    background: rgba(128, 128, 128, .2);
+    padding: 80px 40px;
+    border-radius: 25px;
+}
+
+.msec1right h2{
+    text-align: center;
+    font-weight: bolder;
+}
+.msec1right label{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.msec1right input{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    color: #2AA2B0;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+/* msec1 end here */
+
+
+/* msec2 start from here */
+    .msec2{      
+        width: 100%;
+        height: 600px;
+        margin-top: 5px;
+        background: #74C0CA;
+    }
+
+    .msec2 > h2{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 45px ;
+        padding-top: 50px;
+        font-weight: bolder;
+        
+    }
+
+    .msec2main{
+        display: flex;
+        margin: 0 30px;
+    }
+
+    .servicebox{
+       flex-basis: 20%;
+       height: 400px;
+       margin: 0 10px;
+       padding: 20px 10px;
+       position: relative;
+       border-radius: 15px;
+       border: solid 2px #2AA2B0;
+       background: linear-gradient(#74C0CA,white);
+       
+    }
+    .servicebox:hover{
+        background: linear-gradient(white,#74C0CA);
+    }
+    .servicebox img{
+        margin-left: 30%;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 100px;
+        border: #2AA2B0 solid 5px;
+        padding: 15px;
+        border-radius: 50% ;
+    }
+    .servicebox h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .servicebox p{
+        text-align: center;
+    }
+    .servicebox button{
+        padding: 5px 15px;
+        margin-left: 60px;
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+        border: solid 2px #2AA2B0;
+    }
+    .servicebox button:hover{
+        background: #2AA2B0;
+        color: white;
+    }
+
+/* msec2 end here */
+
+
+/* msec3 start from here */
+    .msec3{
+        display: flex;
+        margin-top: 5px;
+    }
+    .msec3left{
+        padding: 10px 20px;
+        background: linear-gradient(to top ,rgb(77, 119, 119),rgb(147, 233, 233));
+        color: white;
+    }
+    .msec3 h3{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 45px;
+        color: black;
+        font-weight: bolder;
+    }
+    .msec3 h4{
+        font-size: 35px;
+    }
+    .msec3 p{
+        text-align: justify;
+        font-weight: bold;
+    }
+    .msec3left ul li{
+        list-style: circle;
+    }
+    .msec3left button{
+        background: #2AA2B0;
+        color: white;
+        padding: 5px 15px;
+        border: solid 2px #2AA2B0;
+    }
+
+    .msec3left button:hover{
+        background: white;
+        border: solid 2px #2AA2B0;
+        color: #2AA2B0;
+        font-weight: bold;
+    }
+/* msec3 end here */
+
+
+/* msec4 start from here */
+    .msec4{
+        margin-top: 5px;
+        background: url(../img/bg2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 700px;
+        color: whitesmoke;
+        
+    }
+    .msec4 h2{
+        font-size: 45px;
+        text-align: center;
+        padding: 50px;
+        font-weight: bolder;
+        color: #0c08f0;
+        backdrop-filter: blur(8px);
+    }
+    .msec4main{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .msec4p1{
+        display: flex;
+        align-items: center;
+        flex-basis: 30%;
+        
+    }
+    .msec4p2{
+        display: flex;
+        align-items: center;
+        flex-basis: 30%;
+        
+    }
+    .msec4p3{
+        display: flex;
+        align-items: center;
+        flex-basis: 30%;
+        
+    }
+    .aus{
+        padding: 20px;
+        background: rgba(128, 128, 128, .5);
+        margin-left: 5px;
+        border-radius: 20px;
+        backdrop-filter: blur(2px);
+        flex-basis: ;
+    }
+    .aus img{
+        width: 150px;
+        height: 150px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        border: solid 5px #e791c1;
+    }
+    .aus h3{
+        font-size: 35px;
+        font-weight: bolder;
+    }
+    .aus h4{
+        font-size: 20px;
+    }
+    .aus div{
+        text-align: center;
+    }
+    .aus div i{
+        padding: 10px;
+        font-size: 25px;
+        border: solid 4px yellow;
+        border-radius: 50%;
+        transition-duration: .5s;
+    }
+    .aus div i:hover{
+        cursor: pointer;
+        background: yellow;
+        border: 4px solid white;
+        color: #ea1538;
+        
+    }
+    /* msec4 end here */
+
+
+
+    /* msec5 start from here */
+    .msec5{
+        background: #f0b8c6;
+        margin-top: 5px;
+        width: 100%;
+        height: 1300px;
+    }
+    .msec5sec1, .msec5sec2{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 100px;
+        
+    }
+
+    .msec5box{
+        border: solid 2px #f0b8c6;
+        border-radius: 20px;
+        flex-basis: 23%;
+        padding: 30px 20px;
+        background: #ee93aa;
+        position: relative;
+        height: 500px;
+        box-shadow: 1px 3px 5px rgb(177, 108, 120) ;
+    }
+    .msec5box:hover{
+        box-shadow: 3px 9px 20px rgb(177, 108, 120) ;
+    }
+
+    .msec5box img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 55px;
+        margin-bottom: 20px;
+    }
+   
+    .msec5box h4{
+        font-weight: bolder;
+    }
+    .msec5box p{
+        text-align: justify;
+    }
+    .msec5box h3{
+        position: absolute;
+        left: 120px;
+        bottom: 90px;
+        font-weight: bolder;
+    }
+    .msec5box button{
+        padding: 5px 15px;
+        border: solid 2px #ee93aa;
+        position: absolute;
+        left: 100px;
+        bottom: 40px;
+        border-radius: 10px;
+        color: #ee4c74;
+        background: rgb(235, 225, 225);
+        font-weight: bolder;
+        transition-duration: .3s;
+    }
+    .msec5box button:hover{
+        background: #ee93aa;
+        color: whitesmoke;
+        border: 2px solid whitesmoke;
+    }
+
+    /* msec5 end here */
+
+
+/* main area end here */
+
+
+
+/* footer area start form hear */
+    footer{
+        color: whitesmoke;
+        margin-top: 5px;
+        width: 100%;
+        height: 400px;
+        background: #1A1C1D;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fsec1{
+        flex-basis: 25%;
+    }
+    .fsec2{
+        flex-basis: 20%;
+    }
+    .fsec3{
+        flex-basis: 20%;
+    }
+    .fsec4{
+        flex-basis: 25%;
+    }
+    .samebox{
+        margin-top: 50px;
+
+    }
+    .samebox h3{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .fsec1 div{
+        margin-top: 30px;
+    }
+    .fsec1 div i{
+        padding: 20px;
+        font-size: 20px;
+        border: solid gray 2px;
+        border-radius: 50%;
+    }
+    .fsec1 div i:hover{
+        color: #2AA2B0;
+        cursor: pointer;
+    }
+    .fsec1 p{
+        line-height: 30px;
+    }
+
+
+    .fsec2 ul li{
+        list-style: circle;
+        line-height: 30px;
+    }
+    .fsec2 ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+    .fsec2 ul li a:hover{
+        color: #2AA2B0;
+    }
+
+    .fsec3 h4{
+        font-size: 18px;
+    }
+    .fsec3 h5 i{
+        color: #2AA2B0;
+        padding-right: 5px;
+    }
+    .fsec3 h5{
+        margin-bottom: 20px;
+    }
+
+    .fsec4 form input, .fsec4 form button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .fsec4 form input{
+        padding: 5px 10px;
+        font-size: 18px;
+        border: solid #2AA2B0 2px;
+        background: transparent;
+        border-radius: 20px;
+        color: #2AA2B0;
+        font-weight: bolder;
+    }
+    .fsec4 form input:focus{
+        border: solid 2px #2AA2B0;
+        background: #2AA2B0;
+        color: whitesmoke;
+    }
+    .fsec4 form button{
+        padding: 5px;
+        font-weight: bolder;
+        font-size: 20px;
+        border-radius: 25px;
+        background: linear-gradient(to right, #e94e75,#2AA2B0);
+        border: solid 2px #1A1C1D;
+        color: red;
+        
+    }
+    .fsec4 form button:hover{
+        background: linear-gradient(to left, #ee93aa,#2AA2B0); 
+    }
+
+/* footer area end here */
